@@ -36,13 +36,15 @@ const Contact = () => {
         <button type="submit">Send</button>
       </form>
       )}
-      
+
       {/* Netlify bot-only form, will be stripped from screen but parsed at build */}
-      <form name="contact" netlify hidden>
+      <div hidden>
+      <form name="contact" netlify>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message" />
       </form>
+      </div>
     </section>
   )
 }
