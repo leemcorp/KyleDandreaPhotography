@@ -1,0 +1,57 @@
+.blurb {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.header {
+  background-color: #5d707f ;
+  color: #0b132b;
+  padding: 1rem;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-family: "Nixie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.header nav a {
+  margin: 0 1rem;
+  color: #ccc;
+  text-decoration: none;
+}
+.header nav a:hover {
+  color: white;
+}
+.hero {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/public/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+footer {
+   background-color: #5d707f;
+  color: #0b132b;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  .header nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .blurb {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
