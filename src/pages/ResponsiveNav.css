@@ -23,11 +23,27 @@
 
 }
 
+.nav-links button {
+  background: none;
+  border: none;
+  padding: 0.25rem 1rem;
+  margin: 0;
+  font: inherit;
+  color: #fdf5e6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-links button:hover {
+  text-decoration: underline;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: #fdf5e6;
   font-weight: 500;
 }
+
 
 @media (max-width: 1000px) {
   .hamburger {

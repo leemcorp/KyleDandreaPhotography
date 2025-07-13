@@ -7,6 +7,7 @@ import ResponsiveNav from './pages/Nav';
 import {intro_blurb } from './constants/constants';
 import Weddings_Elopements from './pages/Weddings_Elopements';
 import Maternity from './pages/Maternity';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -16,18 +17,16 @@ function App() {
                    <ResponsiveNav />
           <h1>kyle dandrea photography</h1>
           <p>Capturing real moments with heart, light, and soul.</p>
-          {/* <nav>
-            <a href='#lifestyle'>Lifestyle</a>
-            <a href='#couples'>Couples</a>
-            <a href='#elopements'>Elopements</a>
-            <a href='#weddings'>Weddings</a>
-            <a href='#contact'>Contact</a>
-          </nav> */}
-  
+
         </header>
         <main>
 
-          <section id="blurb" className='section'>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+          </Routes>
+
+          {/* <section id="blurb" className='section'>
             <p className='blurb'>{intro_blurb}</p>
           </section>
           <section id="maternity" className='section'>
@@ -41,12 +40,7 @@ function App() {
           </section>
           <section id="contact" className='section'>
             <Contact />
-          </section>
-      {/*    <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes> */}
+          </section> */}
         </main>
         <footer>
           <p>&copy; 2025 Kyle Dandrea</p>
