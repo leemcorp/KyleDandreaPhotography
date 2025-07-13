@@ -2,10 +2,14 @@
   padding: 2rem;
   max-width: 500px;
   margin: auto;
+  font-family: "Nixie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   
 }
 label {
